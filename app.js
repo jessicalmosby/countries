@@ -47,7 +47,7 @@ function displayCountries() {
     countryList.innerHTML = '';
     for (const country of countries) {
         // Slice A: Call imported render countries function and append to list
-        const countryEl = renderCountry();
+        const countryEl = renderCountry(country);
         countryList.append(countryEl);
     }
 }
